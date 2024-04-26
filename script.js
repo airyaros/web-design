@@ -1,44 +1,36 @@
-let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll(' .slider .list .item');
-let dots = document.querySelectorAll(' .slider .dot li');
-let prev =  document.getElementById('prev');
-let next = document.getElementById('next');
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
 
-let active = 0;
-let lengthItems = items.length -1;
+let currentIndex = 0;
 
-next.onclick = function(){
-    if (active + 1 > lengthItems){
-        active = 0;
+function showSlide(index) {
+    if (index < 0) {
+        currentIndex = slides.length - 1;
+    } else if (index >= slides.length) {
+        currentIndex = 0;
+    } else {
+        currentIndex = index;
     }
-    else{
-        active = active + 1
-    }
-    reloadSlider();
-}
-prev.onclick = function(){
-    if (active - 1 < 0 ){
-        active = active.lengthItems;
-    }
-    else{
-        active = active - 1
-    }
-    reloadSlider();
-}
-let refreshSlider = setInterval(() => {next.click()}, 5000)
-function reloadSlider(){
-    let checkLeft = items[active].offsetLeft;
-    list.style.left = -checkLeft + 'px';
 
-let lastActiveDot = document.querySelector(' .slider .dot li.active');
-lastActiveDot .classList.remove('active');
-dots[active].classList.add('active');
-clearInterval(refreshSlider);
-refreshSlider = setInterval(() => {next.click()}, 3000)
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // Update active dot
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
 }
-dot.forEach((li, key) => {
-    li.addEventListener('click', function(){
-        active = key;
-        reloadSlider();
-    })
-})
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+function currentSlide(index) {
+    showSlide(index - 1);
+}
+
+// Automatic slide change
+setInterval(nextSlide, 5000); // Change slide every 5 seconds
