@@ -161,10 +161,10 @@ h1, p {
 }
 /*cards*/
 .ourBestFood {
-    padding: 25px 0px 0px 25px;
+    padding: 50px 0px 0px 25px;
     background-color: white;
     display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    flex-wrap: wrap; 
     justify-content: space-around;
     align-items: center;
     
@@ -177,8 +177,8 @@ h1, p {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 0px;
-    height: 250px; /* Allow image to resize with its container */
-    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: 250px; 
+    max-width: 100%;
 }
 
 .card1 {
@@ -188,9 +188,9 @@ h1, p {
     justify-content: center;
     align-items: center;
     height: 300px;
-    width: calc(50% - 30px); /* Adjust width for smaller screens */
-    max-width: 250px; /* Limit width on larger screens */
-    margin-bottom: 20px; /* Add space between cards */
+    width: calc(50% - 30px); 
+    max-width: 250px; 
+    margin-bottom: 20px; 
     border-radius: 15px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
@@ -221,4 +221,7 @@ h1, p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.container{
+    margin-top: 50px;
 }
