@@ -1,0 +1,264 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire document */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: black; /* Set the background color of the body */
+    color: #eee; /* Set the text color */
+}
+
+/* Header section styles */
+.contact-header {
+    background-image: url('piccch.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: top; /* Position background at the top */
+    padding: 200px 0; /* Add padding top and bottom */
+    text-align: center; /* Center align text */
+    margin-bottom: 100px; /* Add bottom margin */
+}
+
+.contact-header h1 {
+    font-size: 36px; /* Set font size */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+.contact-header p {
+    font-size: 18px; /* Set font size */
+    color: whitesmoke; /* Set text color */
+}
+
+/* Main content section styles */
+.content {
+    display: flex; /* Display as flex */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Left and right content styles */
+.left,
+.right {
+    width: 48%; /* Set width */
+}
+
+.left h2,
+.right h2 {
+    font-size: 24px; /* Set font size */
+    margin-bottom: 15px; /* Add bottom margin */
+    margin-left: 20px;
+}
+
+.left p,
+.right p {
+    font-size: 16px; /* Set font size */
+    color: #555; /* Set text color */
+    line-height: 1.5; /* Set line height */
+    margin-left: 20px;
+}
+
+/* Contact information pairs styles */
+.contact-pair {
+    display: flex; /* Display as flex */
+    margin-bottom: 20px; /* Add bottom margin */
+    margin-left: 20px;
+}
+
+.contact-info {
+    flex: 1; /* Distribute space evenly */
+    display:flex; /* Display as flex */
+    margin-right: 10px;
+}
+
+.icon{
+    margin-right: 10px; /* Add right margin */
+}
+
+.icon img {
+    width: 30px; /* Set image width */
+    height: 30px; /* Set image height */
+}
+
+.details h3 {
+    font-size: 18px; /* Set font size */
+   
+}
+
+.details p {
+    font-size: 16px; /* Set font size */
+    color: #555; /* Set text color */
+    
+}
+
+.right form {
+    margin-top: 20px; /* Add top margin */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.form-group label {
+    display: block; /* Display as block */
+    font-size: 18px; /* Set font size */
+    margin-bottom: 5px; /* Add bottom margin */
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; /* Set width */
+    padding: 10px; /* Add padding */
+    border: 1px solid #333; /* Add border */
+    background-color: rgb(31 41 55); /* Set background color */
+    border-color: rgb(3 7 18); /* Set background color */
+    border-width: 1px; /* Set background color */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Set font size */
+    margin-bottom: 10px; /* Add bottom margin */
+    margin-right: 20px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resize */
+}
+
+button[type="submit"] {
+    background-color: orange; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor */
+    transition: background-color 0.3s ease; /* Add transition */
+    font-size: 16px; /* Set font size */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Map section styles */
+.map {
+    text-align: center; /* Center align text */
+    margin-top: 30px; /* Add top margin */
+}
+
+.map iframe {
+    width: 90%; /* Set width */
+    max-width: 100%; /* Set maximum width */
+    height: 400px; /* Set height */
+    border: none; /* Remove border */
+}
+
+/* Footer section styles */
+.footer-content {
+    display: flex; /* Display as flex */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.updates {
+    background-color: orange; /* Set background color */
+    display: flex; /* Display as flex */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items at the center */
+    padding: 20px; /* Add padding */
+    width: 100%; /* Set width */
+}
+
+.updates-left {
+    margin-bottom: 10px; /* Add bottom margin */
+   
+}
+
+.updates h3 {
+    font-size: 20px; /* Set font size */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+    margin-left: 25px; /* Add left margin */
+    color: black; /* Set text color */
+}
+
+.updates p {
+    font-size: 16px; /* Set font size */
+    color: #fff; /* Set text color */
+    margin-bottom: 20px; /* Add bottom margin */
+    margin-left: 25px; /* Add left margin */
+}
+
+.updates form {
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items at the center */
+    margin-right: 25px; /* Add right margin */
+}
+
+.updates input[type="email"] {
+    width:500px; /* Set width */
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Set font size */
+    margin-right: 5px; /* Add right margin */
+    background-color: #fff; /* Set background color */
+}
+
+.updates button[type="submit"] {
+    width: calc(30% - 10px); /* Calculate width */
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor */
+    transition: background-color 0.3s ease; /* Add transition */
+    font-size: 16px; /* Set font size */
+    background-color: black; /* Set background color */
+    color: #fff; /* Set text color */
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Media query for smaller screens */
+    .container{
+        font-size: 14px;
+        width: 100%;
+    }
+    .content{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left{
+        order: 1;
+        width:100%;
+    }
+    .right{
+        order: 2;
+        width: 100%;
+        margin-left: 20px;
+    }
+    .map{
+        order: 3;
+    }
+    footer{
+        order: 4;
+    }
+    .updates {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items at the start */
+    }
+
+    .updates form {
+        margin-top: 10px; /* Add top margin */
+    }
+
+    .updates input[type="email"] {
+        width: 100%; /* Set width */
+        margin-right: 10px; /* Remove right margin */
+        margin-left: 100px;
+      
+    }
+
+    .updates button[type="submit"] {
+        width: 100%; /* Set width */
+        margin-top: 0px; /* Add top margin */
+    }
+}
